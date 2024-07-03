@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-andres-zapata
+  namespace: namespace-andres-zapata  # Specify the namespace here
+spec:
+  containers:
+  - name: contenedor-andres-zapata
+    image: httpd
+    ports:
+    - containerPort: 80
